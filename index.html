@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900" rel="stylesheet">
+--><link href="css/style.css" rel="stylesheet">
+<meta charset="utf-8" />
+<style>
+
+
+.red {
+  background-color: red;
+}
+
+.fish.red::before {
+  border-left-color: red;
+}
+
+.block {
+  width : 100px;
+  height : 50px;
+  background-color: blue;
+}
+
+.bubble {
+  border-radius : 50%;
+  width : 20px;
+  height : 20px;
+  background-color: lightblue;
+}
+
+.fish {
+  border-radius : 50%;
+  width : 100px;
+  height : 30px;
+  position : absolute;
+}
+
+.fish::before {
+  content : " ";
+  display : block;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-left : 30px solid transparent;
+  position : absolute;
+  left : -10px;
+  top : -5px;
+}
+
+
+
+body {
+  margin : 50px;
+}
+
+.container {
+  margin : 0 auto;
+  height : 100%;
+  border : 1px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+#fish1 {
+  bottom : 50px;
+}
+
+#bubble1 {
+  left : 100px;
+}
+</style>
+
+</head>
+<body>
+<div class="container">
+  <div class="block skew">
+    Text Text Text
+  </div>
+  <div class="block reverse-skew">
+
+  </div>
+  <div class="block skew">
+
+  </div>
+  <div class="block reverse-skew">
+
+  </div>
+  <div class="block skew">
+
+  </div>
+  <div class="block reverse-skew">
+
+  </div>
+  <div class="block skew">
+
+  </div>
+  <div class="block reverse-skew">
+
+  </div>
+  <div id="bubble1" class="bubble up">
+
+  </div>
+  <div id="fish1" class="fish left red">
+
+  </div>
+</div>
+<script type="text/javascript" src="js/script.js">
+
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+
+@keyframes reverse-skew {
+  0% {
+    transform: skewX(-20deg);
+  }
+  100% {
+    transform: skewX(20deg);
+  }
+}
+
+.skew {
+  animation: skew 3s infinite linear;
+  transform: skew(20deg);
+  animation-direction: alternate;
+}
+
+
+.reverse-skew {
+  animation: reverse-skew 3s infinite linear;
+  transform: skew(-20deg);
+  animation-direction: alternate;
+}
+
+@keyframes up {
+  0% {
+    bottom : 0;
+  }
+  100% {
+    bottom : 100%;
+  }
+}
+
+.up {
+  animation: up 3s infinite linear;
+  position: absolute;
+}
+
+@keyframes left {
+  0% {
+    left : 0;
+  }
+  100% {
+    left : 100%;
+  }
+}
+
+.left {
+  animation: left 3s infinite linear;
+  position: absolute;
+}
