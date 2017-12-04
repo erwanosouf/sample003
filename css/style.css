@@ -16,14 +16,19 @@
   }
 }
 
-.skew {
+.algae div {
+  width : 100%;
+  height : 50px;
+  background-color: green;
+}
+
+.algae > *:nth-child(odd) {
   animation: skew 3s infinite linear;
   transform: skew(20deg);
   animation-direction: alternate;
 }
 
-
-.reverse-skew {
+.algae > *:nth-child(even) {
   animation: reverse-skew 3s infinite linear;
   transform: skew(-20deg);
   animation-direction: alternate;

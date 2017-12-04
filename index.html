@@ -12,13 +12,11 @@
 }
 
 .fish.red::before {
-  border-left-color: red;
+  border-left-color : red;
 }
 
-.block {
-  width : 100px;
-  height : 50px;
-  background-color: blue;
+.green {
+  background-color : green;
 }
 
 .bubble {
@@ -47,8 +45,6 @@
   top : -5px;
 }
 
-
-
 body {
   margin : 50px;
 }
@@ -68,34 +64,25 @@ body {
 #bubble1 {
   left : 100px;
 }
+
+#algae1 {
+  width : 100px;
+  left : 100px;
+  position : relative;
+}
 </style>
 
 </head>
 <body>
 <div class="container">
-  <div class="block skew">
-    Text Text Text
-  </div>
-  <div class="block reverse-skew">
-
-  </div>
-  <div class="block skew">
-
-  </div>
-  <div class="block reverse-skew">
-
-  </div>
-  <div class="block skew">
-
-  </div>
-  <div class="block reverse-skew">
-
-  </div>
-  <div class="block skew">
-
-  </div>
-  <div class="block reverse-skew">
-
+  <div id="algae1" class="algae">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
   </div>
   <div id="bubble1" class="bubble up">
 
